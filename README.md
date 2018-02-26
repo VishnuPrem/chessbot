@@ -10,7 +10,7 @@ Electrical Elements:
 The cartesian arm is actuated using two stepper motors for x axis and y axis movements. A belt drive converts the rotary motion to linear motion. The gripper moves vertically and open/close using two servos. An Arduino UNO controls the stepper motor drivers and the servo motors.
 
 Programming Elements:
-The image processing is done using OpenCV 3.0.0 running on Python 2.7. The program uses techniques such as color detection, perspective transformation, motion detection and several other image prepossessing techniques. There is constant communication between the PC and Arduino board by serial communication. The best move to be made is calculated using a chess engine, which is an open source chess engine.
+The image processing is done using OpenCV 3.0.0 running on Python 2.7. The program uses techniques such as color detection, perspective transformation, motion detection and several other image prepossessing techniques. There is constant communication between the PC and Arduino board by serial communication. The best move to be made is calculated using 'Stockfish 7', which is an open source chess engine.
 
 The Project folder contains all contents that contribute towards the software of the chessbot
 
