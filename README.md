@@ -1,6 +1,6 @@
 # Chessbot
 
-The chessbot can play a complete game of chess against a human opponent. It uses image processing to track the movement of pieces by the human opponent. Then it calculates the best move to be made and picks and places the required piece to execute the best move. The process repeats till the game comes to an end.
+The chessbot is a robot that can play a complete game of chess against a human opponent. It uses image processing to track the movement of pieces by the human opponent. Then it calculates the best move to be made and picks and places the required piece to execute the best move. The process repeats till the game comes to an end.
 
 Mechanical Elements
 The robotic arm is a cartesian arm. Hence it is able to move in 3 axes. The manipulator is a gripper. Hence it has 4 degrees of freedom. The joints of the arm are to be designed in CREO Parametric and then 3D printed using PLA. 
