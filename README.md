@@ -28,4 +28,4 @@ ChessBoard.py is a library utilised during interaction with the chess engine. It
 
 For any more information contact vishnu.prem06@gmail.com
 
-NOTE: I am relatively new to Github and an amateur programmer. Please excuse the lack of professionalism in my work.
+
