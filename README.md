@@ -1,11 +1,11 @@
 # Chessbot
-Video:https://www.youtube.com/watch?v=mVN2BmjSzAE
+[Video](https://www.youtube.com/watch?v=mVN2BmjSzAE)
 
-The chessbot is a robot that can play a complete game of chess against a human opponent. It uses image processing to track the movement of pieces by the human opponent. Then it calculates the best move to be made and picks and places the required piece to execute the best move. The process repeats till the game comes to an end.
+The chessbot is a robot that can play a complete game of chess against a human opponent. It uses a camera to identify the move made by the human opponent. Then it calculates the best move to be made using an out-of-the-box chess engine and picks and places the required piece so as to execute the best move. The process repeats till the game comes to an end.
 
-Mechanical Elements:
+##Mechanical Elements:
 The robotic arm is a cartesian arm. Hence it is able to move in 3 axes. The manipulator is a gripper. Hence it has 4 degrees of freedom. The joints of the arm were designed in CREO Parametric and then 3D printed using PLA. 
-The chess board will have red and black squares so that the white pieces will contrast with the board making it easier to detect for a camera.
+
 
 Electrical Elements:
 The cartesian arm is actuated using two stepper motors for x axis and y axis movements. A belt drive converts the rotary motion to linear motion. The gripper moves vertically and open/close using two servos. An Arduino UNO controls the stepper motor drivers and the servo motors.
