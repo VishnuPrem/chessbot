@@ -1,6 +1,8 @@
 # Chessbot
 
-The chessbot is a robot that can play a complete game of chess against a human opponent. It uses a camera to identify the move made by the human opponent. Then it calculates the best move to be made using an out-of-the-box chess engine and picks and places the required piece so as to execute the best move. The process repeats till the game comes to an end. A video of the robot can be found [here](https://www.youtube.com/watch?v=mVN2BmjSzAE)
+The chessbot is a robot that can play a complete game of chess against a human opponent. It uses a camera to identify the move made by the human opponent. Then it calculates the best move to be made using an out-of-the-box chess engine and picks and places the required piece so as to execute the best move. The process repeats till the game comes to an end.
+
+A video of the robot can be found [**here**](https://www.youtube.com/watch?v=mVN2BmjSzAE)
 
 ![System Architecture](/img/img1.png)
 
@@ -59,4 +61,4 @@ Simmilarly, the state of the board after the move is made is found. By comparing
 
 Stockfish 7, the open source chess engine determines the move to be made to counter the detected move.
 
-
+A video of the robot can be found [**here**](https://www.youtube.com/watch?v=mVN2BmjSzAE)
