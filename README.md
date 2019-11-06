@@ -7,31 +7,56 @@ The chessbot is a robot that can play a complete game of chess against a human o
 
 ### Hardware:
 
-The robotic arm is a cartesian arm with 4 DOF including the gripper. 
-![pic](/img/img2.png)
+The robotic arm is a cartesian arm with 4 DOF including the gripper. The arm has a core xy mechanism allowing for movement over a planaer surface with minimal weight on the links. 
 
-The manipulator is a gripper.  The joints of the arm were designed in CREO Parametric and then 3D printed using PLA. 
+<p align="center"> 
+<img src="/img/img2.png">
+</p>
+
+<p align="center"> 
+<img src="/img/img3.png">
+</p> 
+
+<p align="center"> 
+<img src="/img/img4.png">
+</p>
 
 
+The arm and gripper were designed in CREO Parametric and then 3D printed. 
+
+
+<p align="center"> 
+<img src="/img/img9.png">
+</p>
 
 The cartesian arm is actuated using two stepper motors for x axis and y axis movements. A belt drive converts the rotary motion to linear motion. The gripper moves vertically and open/close using two servos. An Arduino UNO controls the stepper motor drivers and the servo motors.
 
-Programming Elements:
-The image processing is done using OpenCV 3.0.0 running on Python 2.7. The program uses techniques such as color detection, perspective transformation, motion detection and several other image prepossessing techniques. There is constant communication between the PC and Arduino board by serial communication. The best move to be made is calculated using 'Stockfish 7', which is an open source chess engine.
+## Software
+:
+The image processing is done using OpenCV 3.0.0 running on Python 2.7. The program uses techniques such as color detection, perspective transformation, motion detection and several other image prepossessing techniques. 
 
-The Project folder contains all contents that contribute towards the software of the chessbot
+<p align="center"> 
+<img src="/img/img5.png">
+</p>
 
+The goal of the image processing algorithm is to identify the move made from an image of the board before and after the move is made.
 
-CHESSBOT.py contains the main program which performs the image processing of the chessbot as well as the serial communication to the arduino.
+<p align="center"> 
+<img src="/img/img6.png">
+</p>
 
-Chessbot.pptx contains the explanation of contruction and working of the project
+By color filtering the corner markers, finding their centroids and then performing perspective transformation, the image is transformed to include only the region that is relevant for move identification. Color filtering the white pixels helps locate the white peices which are mapped onto a matrix.
 
-chessbot pic.docx contains furthur images 
+<p align="center"> 
+<img src="/img/img7.png">
+</p>
 
-stockfish 7 x64.exe is the chess engine used
+Simmilarly, the state of the board after the move is made is found. By comparing the two matrices, the move made is computed and converted to chess notation. In this case 'e2e4'.
 
-ChessBoard.py is a library utilised during interaction with the chess engine. It is not written by me.
+<p align="center"> 
+<img src="/img/img8.png">
+</p>
 
-For any more information contact vishnu.prem06@gmail.com
+Stockfish 7, the open source chess engine determines the move to be made to counter the detected move.
 
 
