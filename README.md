@@ -7,10 +7,13 @@ The chessbot is a robot that can play a complete game of chess against a human o
 
 ### Hardware:
 
-The robotic arm is a cartesian arm. Hence it is able to move in 3 axes. The manipulator is a gripper. Hence it has 4 degrees of freedom. The joints of the arm were designed in CREO Parametric and then 3D printed using PLA. 
+The robotic arm is a cartesian arm with 4 DOF including the gripper. 
+!(/img/img2.png)
+
+The manipulator is a gripper.  The joints of the arm were designed in CREO Parametric and then 3D printed using PLA. 
 
 
-Electrical Elements:
+
 The cartesian arm is actuated using two stepper motors for x axis and y axis movements. A belt drive converts the rotary motion to linear motion. The gripper moves vertically and open/close using two servos. An Arduino UNO controls the stepper motor drivers and the servo motors.
 
 Programming Elements:
