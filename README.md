@@ -8,7 +8,7 @@ The chessbot is a robot that can play a complete game of chess against a human o
 ### Hardware:
 
 The robotic arm is a cartesian arm with 4 DOF including the gripper. 
-!(/img/img2.png)
+![pic](/img/img2.png)
 
 The manipulator is a gripper.  The joints of the arm were designed in CREO Parametric and then 3D printed using PLA. 
 
