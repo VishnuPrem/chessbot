@@ -8,8 +8,9 @@ The chessbot is a robot that can play a complete game of chess against a human o
 
 A video of the robot can be found [**here**](https://www.youtube.com/watch?v=mVN2BmjSzAE)
 
-![System Architecture](/img/img1.png)
-
+<p align="center"> 
+<img src="/img/img1.png" width = "400">
+</p>
 
 ### Hardware:
 
