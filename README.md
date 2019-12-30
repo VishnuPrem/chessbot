@@ -1,4 +1,4 @@
-# Chessbot
+# Chess Playing Robot
 
 <p align="center"> 
 <img src="/img/img10.png" width = "400">
@@ -6,7 +6,7 @@
 
 The chessbot is a robot that can play a complete game of chess against a human opponent. It uses a camera to identify the move made by the human opponent. Then it calculates the best move to be made using an out-of-the-box chess engine and picks and places the required piece so as to execute the best move. The process repeats till the game comes to an end.
 
-### Video 
+## Video:
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=mVN2BmjSzAE">
@@ -14,13 +14,13 @@ The chessbot is a robot that can play a complete game of chess against a human o
 </a>
 </p>
 
-### Architecture
+## System Architecture:
 
 <p align="center"> 
 <img src="/img/img1.png" width = "400">
 </p>
 
-### Hardware:
+## Mechanical:
 
 The robotic arm is a cartesian arm with 4 DOF including the gripper. The arm has a core xy mechanism allowing for movement over a planaer surface with minimal weight on the links. 
 
@@ -46,8 +46,8 @@ The arm and gripper were designed in CREO Parametric and then 3D printed.
 
 The cartesian arm is actuated using two stepper motors for x axis and y axis movements. A belt drive converts the rotary motion to linear motion. The gripper moves vertically and open/close using two servos. An Arduino UNO controls the stepper motor drivers and the servo motors.
 
-## Software
-:
+## Computer Vision: 
+
 The image processing is done using OpenCV 3.0.0 running on Python 2.7. The program uses techniques such as color detection, perspective transformation, motion detection and several other image prepossessing techniques. 
 
 <p align="center"> 
